@@ -1,0 +1,36 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    height: 30px;
+    z-index: 1; /* so it always stays at top*/
+
+    display: flex;
+    justify-content: space-between; 
+    /* position:fixed doesn't work with justify-content SO we have to use WIDTH:100% TO KEEP THE 2 LOGO APART FROM EACH OTHER. */
+
+    /* Animations */
+    transition-timing-function: ease-in;
+    transition: all 0.5s; 
+    /* smooth fading: 0.5s delay of bg change of black at top to banner visbility */
+
+}
+
+.nav_black{
+    background-color: #111;
+}
+
+.nav_logo{
+    position: fixed;
+    left: 20;
+    width: 80px;
+    object-fit: contain;
+}
+
+.nav_avatar{
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    object-fit: contain;
+}

@@ -1,0 +1,37 @@
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+.row_posters{
+     display: flex; 
+     /* from vertically to horizontally in row form (in just a line) */
+     overflow-y: hidden;
+     overflow-x: scroll;
+     padding: 20px;
+    }
+
+/* for not displaying scrollbar in every row but keep the functionality*/
+.row_posters::-webkit-scrollbar {
+ display: none;
+}
+.row_poster{
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row_poster:hover{
+    transform: scale(1.08);
+}
+
+/* large size for netflix originals images */
+.row_posterLarge{
+    max-height: 250px;
+}
+
+.row_posterLarge:hover{
+    transform: scale(1.09);
+} 
